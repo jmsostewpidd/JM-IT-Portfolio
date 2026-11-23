@@ -903,3 +903,165 @@ input:focus-visible {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* ========================================
+   DESIGN BOOK ALIGNMENT
+   JM | IT Portfolio
+======================================== */
+
+:root {
+    /* Official color palette */
+    --background: #100B1F;
+    --surface: rgba(36, 19, 63, 0.82);
+    --surface-light: rgba(245, 240, 255, 0.06);
+
+    --white: #F5F0FF;
+    --muted: #C7BCD8;
+
+    --purple: #7C3AED;
+    --violet: #7C3AED;
+    --magenta: #D946EF;
+
+    /* Keep existing CSS references working */
+    --blue: var(--magenta);
+    --gold: var(--magenta);
+
+    /* Use only the two Design Book fonts */
+    --mono-font: "Inter", sans-serif;
+}
+
+/* Background and general readability */
+body {
+    line-height: 1.6;
+}
+
+.background-overlay {
+    background: linear-gradient(
+        180deg,
+        rgba(16, 11, 31, 0.66),
+        rgba(16, 11, 31, 0.91)
+    );
+}
+
+.site-header {
+    background: rgba(16, 11, 31, 0.82);
+}
+
+/* Headings */
+.section-heading h2,
+.contact-content h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2rem);
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 5.5vw, 3rem);
+}
+
+.hero-content h2 {
+    font-size: clamp(1.8rem, 4vw, 2rem);
+}
+
+/* Purple and magenta accents */
+.gradient-text {
+    background-image: linear-gradient(
+        90deg,
+        #7C3AED,
+        #D946EF
+    );
+}
+
+.primary-button {
+    background: #7C3AED;
+    border-color: #7C3AED;
+}
+
+.primary-button:hover {
+    background: #6D28D9;
+    box-shadow: 0 8px 24px rgba(124, 58, 237, 0.25);
+}
+
+/* Cards and panels */
+.glass-card {
+    border-color: rgba(124, 58, 237, 0.22);
+    border-radius: 12px;
+}
+
+.glass-card:hover {
+    border-color: rgba(217, 70, 239, 0.45);
+}
+
+/* Buttons and navigation */
+.button {
+    border-radius: 8px;
+}
+
+.nav-links .nav-contact {
+    border-color: rgba(124, 58, 237, 0.55);
+    border-radius: 8px;
+}
+
+/* Certificates */
+.certificate-modal-content {
+    background: rgba(36, 19, 63, 0.97);
+    border-color: rgba(124, 58, 237, 0.4);
+    border-radius: 12px;
+}
+
+.certificate-link,
+.original-certificate {
+    color: var(--magenta);
+}
+
+.certificate-card:hover .certificate-arrow {
+    color: var(--magenta);
+}
+
+.close-modal {
+    background: #24133F;
+    border-radius: 8px;
+}
+
+.close-modal:hover {
+    color: var(--white);
+    background: var(--magenta);
+}
+
+.original-certificate:hover {
+    color: var(--purple);
+}
+
+/* Project cards */
+.project-image {
+    background: #24133F;
+}
+
+.project-category {
+    background: rgba(16, 11, 31, 0.88);
+    border-radius: 8px;
+}
+
+.project-link {
+    color: var(--magenta);
+}
+
+/* Focus accessibility */
+a:focus-visible,
+label:focus-visible,
+input:focus-visible {
+    outline-color: var(--magenta);
+}
+
+/* Mobile adjustments */
+@media (max-width: 650px) {
+    .hero-content h1 {
+        font-size: clamp(2.4rem, 10vw, 3rem);
+    }
+
+    .hero-content h2 {
+        font-size: clamp(1.8rem, 8vw, 2rem);
+    }
+
+    .nav-links {
+        background: rgba(16, 11, 31, 0.98);
+    }
+}
