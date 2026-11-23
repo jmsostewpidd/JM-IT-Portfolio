@@ -1,33 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The personal portfolio of Justin Matthew G. Jamero, a BSIT student, showcasing skills, projects, and certificates.">
-    <title>JM | IT Portfolio</title>
+    <title>Justin Matthew Jamero | IT Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
+<body>
 
-  <body>
-
+    <!-- Background video and dark overlay -->
     <video class="background-video" autoplay muted loop playsinline
-           poster="images/cosmic-background.jpg">
+           poster="images/cosmic-background.jpg" aria-hidden="true">
         <source src="videos/yes.mp4" type="video/mp4">
     </video>
+    <div class="background-overlay" aria-hidden="true"></div>
 
-    <div class="background-overlay"></div>
-
-    <header class="header">
-        <nav class="navbar">
-
-            <a href="#home" class="logo">
-            <img src="images/logo.png" alt="JM Portfolio Logo">
+    <!-- Site navigation -->
+    <header class="site-header">
+        <nav class="navbar section-width" aria-label="Main navigation">
+            <a href="#home" class="logo" aria-label="Go to homepage">
+                <img src="images/logo.png" alt="JM Portfolio Logo">
             </a>
 
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">☰</label>
+            <!-- CSS-only mobile menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </label>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -36,70 +36,56 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact" class="nav-contact">Contact ↗</a></li>
             </ul>
-
         </nav>
     </header>
 
     <main>
-
-        <section id="home" class="hero section">
-
+        <!-- Home / hero -->
+        <section id="home" class="hero section-width">
             <div class="hero-content">
-
                 <p class="eyebrow">
                     <span class="status-dot"></span>
                     PERSONAL PORTFOLIO / 2026
                 </p>
 
-                <h1>
-                    I'm <span>Justin Matthew G. Jamero.</span>
-                </h1>
-                <h2>
-                    An IT student exploring
-                    <span class="gradient-text">what's possible.</span>
-                </h2>
+                <h1>I'm <span>Justin Matthew G. Jamero.</span></h1>
+                <h2>An IT student exploring <span class="gradient-text">what's possible.</span></h2>
+
                 <p class="hero-description">
-                    A first-year Information Technology student interested
-                    in technology, creativity, and the process of turning
-                    ideas into something meaningful.
+                    A first-year Information Technology student interested in
+                    technology, creativity, and the process of turning ideas
+                    into something meaningful.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#projects" class="button primary-button">
-                        Explore My Work ↗
-                    </a>
-
-                    <a href="#about" class="button secondary-button">
-                        Get to Know Me
-                    </a>
+                    <a href="#projects" class="button primary-button">Explore My Work ↗</a>
+                    <a href="#about" class="button secondary-button">Get to Know Me</a>
                 </div>
 
+                <div class="hero-footer">
+                    <span>MY FIRST WEBSITE</span>
+                    <span>SCROLL TO EXPLORE ↓</span>
+                </div>
             </div>
 
             <div class="hero-image-wrapper">
                 <div class="image-frame">
-                    <img src="images/my-photo.png"alt="Portrait of Justin"class="hero-image">
+                    <img src="images/my-photo.png" alt="Portrait of Justin" class="hero-image">
                 </div>
-
-                <div class="image-caption">
-                    <span>THE MAN HIMSELF</span>
-                </div>
+                <p class="image-caption">THE MAN HIMSELF</p>
             </div>
-
         </section>
 
-        <section id="about" class="section content-section">
-
+        <!-- About -->
+        <section id="about" class="content-section section-width">
             <div class="section-heading">
-                <p class="eyebrow"> INTRODUCTION</p>
+                <p class="eyebrow">INTRODUCTION</p>
                 <h2>A little <span>about me.</span></h2>
             </div>
 
             <div class="about-grid">
-
-                <div class="about-main glass-card">
+                <article class="about-main glass-card">
                     <p class="card-label">WHO I AM</p>
-
                     <h3>Learning, creating, and finding my direction.</h3>
 
                     <p>
@@ -107,7 +93,6 @@
                         first-year Bachelor of Science in Information
                         Technology student at Bukidnon State University.
                     </p>
-
                     <p>
                         I am currently building my foundation in programming,
                         web development, and other areas of information
@@ -115,30 +100,29 @@
                         learning how technology can be used to bring them
                         to life.
                     </p>
-
                     <p>
                         I know that I still have a lot to learn, but I see
                         every activity, project, and challenge as an
                         opportunity to improve.
                     </p>
-                </div>
+                </article>
 
                 <div class="about-details">
-
-                    <div class="glass-card detail-card">
+                    <article class="glass-card detail-card">
                         <p class="card-label">EDUCATION</p>
                         <h3>Bukidnon State University</h3>
                         <p>Tertiary Level</p>
                         <p>BS Information Technology</p>
                         <p>First Year Student</p>
-                        <span>2026-Present</span>
-                        <h3>Philippine Merchant Marine Academy-SHS</h3>
-                        <p>Secondary Level</p>
-                        <p>TVL-Maritime</p>
-                        <span>2023-2025</span>
-                    </div>
+                        <span>2026–Present</span>
 
-                    <div class="glass-card detail-card">
+                        <h3>Philippine Merchant Marine Academy – SHS</h3>
+                        <p>Secondary Level</p>
+                        <p>TVL – Maritime</p>
+                        <span>2023–2025</span>
+                    </article>
+
+                    <article class="glass-card detail-card">
                         <p class="card-label">INTERESTS</p>
                         <div class="tag-list">
                             <span>Programming</span>
@@ -147,206 +131,137 @@
                             <span>Digital Creativity</span>
                             <span>Animation</span>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
             </div>
-
         </section>
 
-
-        <section id="skills" class="section content-section">
-
+        <!-- Skills and certificates -->
+        <section id="skills" class="content-section section-width">
             <div class="section-heading">
-                <p class="eyebrow"> WHAT I'M LEARNING</p>
-                <h2>Skills & <span>knowledge.</span></h2>
+                <p class="eyebrow">WHAT I'M LEARNING</p>
+                <h2>Skills &amp; <span>knowledge.</span></h2>
                 <p class="section-description">
-                    These are some of the technologies and areas I have
-                    started exploring through coursework and independent
-                    learning.
+                    These are some of the technologies and areas I have started
+                    exploring through coursework and independent learning.
                 </p>
             </div>
 
-            <!-- Replace these image files to use different skill icons:
-                 images/coding-dev.png and images/skills-gear.png -->
             <div class="skills-grid">
-
-                <div class="glass-card skill-card">
+                <article class="glass-card skill-card">
                     <span class="skill-number">01</span>
-                    <div class="skill-icon" aria-hidden="true">
-                        <img src="images/coding-dev.png" alt="">
-                    </div>
+                    <div class="skill-icon" aria-hidden="true">⌨</div>
                     <h3>Programming</h3>
-                    <p>
-                        Learning programming fundamentals, logic,
-                        problem-solving, and writing basic programs.
-                    </p>
+                    <p>Learning programming fundamentals, logic, problem-solving, and writing basic programs.</p>
                     <div class="tag-list">
-                        <span>C</span>
-                        <span>Python</span>
-                        <span>Java</span>
+                        <span>C</span><span>Python</span><span>Java</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="glass-card skill-card">
+                <article class="glass-card skill-card">
                     <span class="skill-number">02</span>
-                    <div class="skill-icon" aria-hidden="true">
-                        <img src="images/coding-dev.png" alt="">
-                    </div>
+                    <div class="skill-icon" aria-hidden="true">⌘</div>
                     <h3>Web Development</h3>
-                    <p>
-                        Exploring how websites are structured, styled,
-                        and organized for different screen sizes.
-                    </p>
+                    <p>Exploring how websites are structured, styled, and organized for different screen sizes.</p>
                     <div class="tag-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
+                        <span>HTML</span><span>CSS</span>
                     </div>
-                </div>
+                </article>
 
-                <div class="glass-card skill-card">
+                <article class="glass-card skill-card">
                     <span class="skill-number">03</span>
-                    <div class="skill-icon" aria-hidden="true">
-                        <img src="images/skills-gear.png" alt="">
-                    </div>
-                    <h3>Creative & Digital Work</h3>
-                    <p>
-                        Creating digital presentations, visual layouts,
-                        and multimedia content for academic projects.
-                    </p>
+                    <div class="skill-icon" aria-hidden="true">✦</div>
+                    <h3>Creative &amp; Digital Work</h3>
+                    <p>Creating digital presentations, visual layouts, and multimedia content for academic projects.</p>
                     <div class="tag-list">
-                        <span>Canva</span>
-                        <span>CapCut</span>
+                        <span>Canva</span><span>CapCut</span>
                     </div>
-                </div>
-
+                </article>
             </div>
 
             <div class="certificate-heading">
                 <p class="eyebrow">LEARNING MILESTONES</p>
-                <h3>Certificates & <span>courses.</span></h3>
-                <p>
-                    Introductory courses completed through Cisco Networking
-                    Academy.
-                </p>
+                <h3>Certificates &amp; <span>courses.</span></h3>
+                <p>Introductory courses completed through Cisco Networking Academy.</p>
             </div>
 
             <div class="certificate-grid">
-
-                <a href="#python-essentials-1"
-
-                   rel="noopener noreferrer"
-                   class="glass-card certificate-card">
-
+                <a href="#python-certificate" class="glass-card certificate-card">
                     <div class="certificate-top">
-                        <span class="certificate-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8 4h11l6 6v18H8z"/><path d="M19 4v7h6M12 16l-2 2 2 2m8-4 2 2-2 2m-3-5-2 7"/></svg></span>
-                        <span class="certificate-arrow">↗</span>
+                        <span class="certificate-icon" aria-hidden="true">🐍</span>
+                        <span class="certificate-arrow" aria-hidden="true">↗</span>
                     </div>
-
                     <p class="card-label">CISCO NETWORKING ACADEMY</p>
                     <h4>Python Essentials 1</h4>
                     <p>Introductory course in Python programming.</p>
                     <span class="certificate-link">VIEW CERTIFICATE ↗</span>
-
                 </a>
 
-                <a href="#html-certificate"
-
-                   rel="noopener noreferrer"
-                   class="glass-card certificate-card">
-
+                <a href="#html-certificate" class="glass-card certificate-card">
                     <div class="certificate-top">
-                        <span class="certificate-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m12 9-7 7 7 7m8-14 7 7-7 7m-2-18-4 20"/></svg></span>
-                        <span class="certificate-arrow">↗</span>
+                        <span class="certificate-icon" aria-hidden="true">&lt;/&gt;</span>
+                        <span class="certificate-arrow" aria-hidden="true">↗</span>
                     </div>
-
                     <p class="card-label">CISCO NETWORKING ACADEMY</p>
                     <h4>HTML</h4>
                     <p>Introductory learning in HTML and webpage structure.</p>
                     <span class="certificate-link">VIEW CERTIFICATE ↗</span>
-
                 </a>
 
-                <a href="#css-certificate"
-
-                   rel="noopener noreferrer"
-                   class="glass-card certificate-card">
-
+                <a href="#css-certificate" class="glass-card certificate-card">
                     <div class="certificate-top">
-                        <span class="certificate-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m12 5-3 22m14-22-3 22M5 12h22M4 20h22"/></svg></span>
-                        <span class="certificate-arrow">↗</span>
+                        <span class="certificate-icon" aria-hidden="true">#</span>
+                        <span class="certificate-arrow" aria-hidden="true">↗</span>
                     </div>
-
                     <p class="card-label">CISCO NETWORKING ACADEMY</p>
                     <h4>CSS</h4>
                     <p>Introductory learning in CSS and webpage styling.</p>
                     <span class="certificate-link">VIEW CERTIFICATE ↗</span>
-
                 </a>
-
             </div>
-
         </section>
 
-            <div id="python-essentials-1" class="certificate-modal">
-                <div class="certificate-modal-content">
-                    <a href="#close" class="close-modal">×</a>
-                    <img
-                        src="certificates/python-essentials-1.png"
-                        alt="Python Essentials 1 Certificate"
-                        class="certificate-preview">
-
-                    <a href="certificates/python-essentials-1.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="original-certificate">
-                        Open Original PDF ↗
-                    </a>
-                </div>
+        <!-- Certificate popups: CSS :target, no JavaScript -->
+        <div id="python-certificate" class="certificate-modal">
+            <div class="certificate-modal-content">
+                <a href="#close" class="close-modal" aria-label="Close certificate">×</a>
+                <img src="certificates/python-essentials-1.png"
+                     alt="Python Essentials 1 certificate" class="certificate-preview">
+                <a href="certificates/python-essentials-1.pdf" target="_blank"
+                   rel="noopener noreferrer" class="original-certificate">
+                    Open Original PDF ↗
+                </a>
             </div>
+        </div>
 
-            <div id="html-certificate" class="certificate-modal">
-                <div class="certificate-modal-content">
-                    <a href="#close" class="close-modal">×</a>
-                    <img
-                        src="certificates/html-certificate.png"
-                        alt="HTML Certificate"
-                        class="certificate-preview"
-                    >
-
-                    <a href="certificates/html-certificate.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="original-certificate">
-                        Open Original PDF ↗
-                    </a>
-                </div>
+        <div id="html-certificate" class="certificate-modal">
+            <div class="certificate-modal-content">
+                <a href="#close" class="close-modal" aria-label="Close certificate">×</a>
+                <img src="certificates/html-certificate.png"
+                     alt="HTML certificate" class="certificate-preview">
+                <a href="certificates/html-certificate.pdf" target="_blank"
+                   rel="noopener noreferrer" class="original-certificate">
+                    Open Original PDF ↗
+                </a>
             </div>
+        </div>
 
-            <div id="css-certificate" class="certificate-modal">
-                <div class="certificate-modal-content">
-                    <a href="#close" class="close-modal">×</a>
-        
-                    <img
-                        src="certificates/css-certificate.png"
-                        alt="CSS Certificate"
-                        class="certificate-preview"
-                    >
-
-                    <a href="certificates/css-certificate.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="original-certificate">
-                        Open Original PDF ↗
-                    </a>
-                </div>
+        <div id="css-certificate" class="certificate-modal">
+            <div class="certificate-modal-content">
+                <a href="#close" class="close-modal" aria-label="Close certificate">×</a>
+                <img src="certificates/css-certificate.png"
+                     alt="CSS certificate" class="certificate-preview">
+                <a href="certificates/css-certificate.pdf" target="_blank"
+                   rel="noopener noreferrer" class="original-certificate">
+                    Open Original PDF ↗
+                </a>
             </div>
+        </div>
 
-
-        <section id="projects" class="section content-section">
-
+        <!-- Projects -->
+        <section id="projects" class="content-section section-width">
             <div class="section-heading">
-                <p class="eyebrow"> SELECTED WORK</p>
+                <p class="eyebrow">SELECTED WORK</p>
                 <h2>Things I've <span>worked on.</span></h2>
                 <p class="section-description">
                     A collection of academic activities and creative work
@@ -355,124 +270,80 @@
             </div>
 
             <div class="projects-grid">
-
                 <article class="glass-card project-card">
-
                     <div class="project-image">
-                        <img src="images/podcast.jpg"
-                             alt="Podcast project preview">
+                        <img src="images/podcast.jpg" alt="Lakbay iTalks podcast project preview">
                         <span class="project-category">MULTIMEDIA / GROUP PROJECT</span>
                     </div>
-
                     <div class="project-info">
-                        <div class="project-meta">
-                            <p class="card-label">PROJECT 01</p>
-                            <span class="project-status status-complete">COMPLETED</span>
-                        </div>
+                        <p class="card-label">PROJECT 01</p>
                         <h3>Lakbay iTalks</h3>
-
                         <p>
-                            A group podcast project discussing the Material
-                            Self and Economic Self. This project was for
-                            our Understanding the Self course. The project involved
-                            script development, recording, video editing,
-                            and presenting ideas through a multimedia format.
+                            A group podcast project discussing the Material Self
+                            and Economic Self for our Understanding the Self
+                            course. The project involved script development,
+                            recording, video editing, and presenting ideas
+                            through a multimedia format.
                         </p>
-
                         <div class="tag-list">
-                            <span>Research</span>
-                            <span>Scriptwriting</span>
-                            <span>Video Editing</span>
+                            <span>Research</span><span>Scriptwriting</span><span>Video Editing</span>
                         </div>
-
-                        <a href="https://youtu.be/3oPSGgyT62M?si=IuyDbMkPLmUfNFUg" 
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-link">
+                        <a href="https://youtu.be/3oPSGgyT62M?si=IuyDbMkPLmUfNFUg"
+                           target="_blank" rel="noopener noreferrer" class="project-link">
                             VIEW PROJECT ↗
                         </a>
                     </div>
-
                 </article>
 
                 <article class="glass-card project-card">
-
                     <div class="project-image">
-                        <img src="images/JK Flowers Website.jpg"
-                             alt="JK Flowers Website preview">
+                        <img src="images/JK Flowers Website.jpg" alt="JK Flowers website preview">
                         <span class="project-category">WEB DEVELOPMENT / ACADEMIC PROJECT</span>
                     </div>
-
                     <div class="project-info">
-                        <div class="project-meta">
-                            <p class="card-label">PROJECT 02</p>
-                            <span class="project-status status-ongoing">IN PROGRESS</span>
-                        </div>
+                        <p class="card-label">PROJECT 02</p>
                         <h3>JK Flowers Website</h3>
-
                         <p>
                             A web development project focused on creating a
-                            responsive website for a local flower shop. The project was made
-                            to help the business establish an online presence and improve
-                            customer engagement. The whole process involved designing and implementing
-                            the site's layout, functionality, and user experience.
+                            responsive website for a local flower shop. It was
+                            designed to help the business establish an online
+                            presence and improve customer engagement. The work
+                            involved designing and implementing the site's
+                            layout, functionality, and user experience.
                         </p>
-
                         <div class="tag-list">
-                            <span>HTML</span>
-                            <span>CSS</span>
+                            <span>HTML</span><span>CSS</span>
                         </div>
-
-                        <a href="https://jmsostewpidd.github.io/JK-Flowers/" 
-                           target="_blank"
-                           rel="noopener noreferrer"   
-                           class="project-link">
+                        <a href="https://jmsostewpidd.github.io/JK-Flowers/"
+                           target="_blank" rel="noopener noreferrer" class="project-link">
                             VIEW PROJECT ↗
                         </a>
                     </div>
-
                 </article>
-
             </div>
-
         </section>
 
-        <section id="contact" class="section contact-section">
-
+        <!-- Contact and footer -->
+        <section id="contact" class="contact-section section-width">
             <div class="contact-content glass-card">
-
-                <p class="eyebrow"> GET IN TOUCH </p>
-
+                <p class="eyebrow">GET IN TOUCH</p>
                 <h2>Let's connect and <span>create.</span></h2>
-
                 <p>
                     Thank you for taking the time to explore my portfolio.
                     I am always open to learning, sharing ideas, and
                     connecting with people who are interested in technology
                     and creativity.
                 </p>
-
-                <a href="https://mail.google.com?view=cm&fs=1&to=2601111385@student.buksu.edu.ph"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="button primary-button">
-                   Send Me an Email ↗
+                <a href="https://mail.google.com?view=cm&amp;fs=1&amp;to=2601111385@student.buksu.edu.ph"
+                   target="_blank" rel="noopener noreferrer" class="button primary-button">
+                    Send Me an Email ↗
                 </a>
-
-
             </div>
 
-            <footer class="footer">
-
-
+            <footer class="site-footer">
                 <p>Designed and developed by Justin Matthew Jamero.</p>
-
                 <p>© 2026 | PERSONAL PORTFOLIO</p>
             </footer>
-
         </section>
-
     </main>
-    
-  </body>
-</html>
+</body>
